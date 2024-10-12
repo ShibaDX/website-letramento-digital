@@ -12,7 +12,7 @@ body {
 }
 
 .logo img {
-    width: 15vh;
+    width: 45vh;
     align-items: center;
     text-align: center;
     margin: 0 auto;
@@ -25,7 +25,7 @@ body {
 
 .navbar-nav li i{
     color: var(--cor-subTitulo);
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .nav-item {
@@ -33,7 +33,7 @@ body {
     display: inline-block;
     justify-content: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .bar {
