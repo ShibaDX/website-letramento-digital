@@ -12,7 +12,7 @@ body {
 }
 
 .logo img {
-    width: 45vh;
+    width: 55vh;
     align-items: center;
     text-align: center;
     margin: 0 auto;
@@ -40,4 +40,23 @@ body {
 .bar {
     background-color: var(--cor-retangulo);
     padding: 2px;
+}
+
+.titulo {
+    font-size: 30px;
+}
+
+.texto-1 {
+    text-align: center;
+    margin: 30px auto;
+    justify-content: center;
+    max-width: 70%;
+}
+
+.texto-1 h2 {
+    font-weight: bold;
+}
+
+.texto-1 p {
+    font-size: 19px;
 }
