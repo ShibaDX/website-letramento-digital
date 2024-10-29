@@ -19,8 +19,10 @@ body {
     justify-content: center;
 }
 
+
 .navbar-nav li{
-    padding: 0px 15px;
+    flex: 1; /* Cada item ocupa o mesmo espaço */
+    text-align: center;
 }
 
 .navbar-nav li i{
@@ -29,10 +31,9 @@ body {
 }
 
 .nav-item {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    display: inline-block;
-    justify-content: center;
-    text-align: center;
     font-size: 17px;
 }
 
