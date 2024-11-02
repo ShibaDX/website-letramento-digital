@@ -1,9 +1,11 @@
 :root {
     --cor-planoDeFundo: #f2f2f2;
+    --cor-planoDeFundo2: #e4e4e4;
     --cor-tituloPrincipal: #A65437;
     --cor-subTitulo: #F26938;
     --cor-texto: #0f0f0f;
     --cor-retangulo: #268ea6;
+    --cor-titulo2: rgb(13, 13, 192); 
 
     --titulo: 32px;
     --subtitulo: 22px;
@@ -131,6 +133,32 @@ h1 {
 
 .foto-descricao img {
     
+}
+
+.conheca-equipe {
+    max-width: 100%;
+    background-color: var(--cor-planoDeFundo2);
+}
+
+.conheca-equipe h1 {
+    text-align: center;
+    color: var(--cor-titulo2);
+    font-weight: bold;
+}
+
+.equipe-foto .card{
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.card {
+    border: 2px #FFF solid;
+    max-width: 100%;
+}
+
+.card h5 {
+    font-weight: bold;
 }
 
 footer {
