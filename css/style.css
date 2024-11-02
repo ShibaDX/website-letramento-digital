@@ -5,9 +5,9 @@
     --cor-texto: #0f0f0f;
     --cor-retangulo: #268ea6;
 
-    --titulo: 38px;
-    --subtitulo: 28px;
-    --texto: 20px;
+    --titulo: 32px;
+    --subtitulo: 22px;
+    --texto: 16px;
 }
 
 body {
@@ -33,14 +33,14 @@ body {
 
 .navbar-nav li i{
     color: var(--cor-subTitulo);
-    font-size: 25px;
+    font-size: var(--subtitulo);
 }
 
 .nav-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 17px;
+    font-size: var(--texto);
 }
 
 .bar {
@@ -50,7 +50,7 @@ body {
 }
 
 .titulo {
-    font-size: 30px;
+    font-size: var(--titulo);
 }
 
 .texto-1 {
@@ -65,7 +65,7 @@ body {
 }
 
 .texto-1 p {
-    font-size: 19px;
+    font-size: var(--texto);
 }
 
 .botao-acessibilidade {
@@ -91,7 +91,7 @@ body {
 }
 
 .container-body {
-    height: 2000px; /* apenas pra testar se o botão da acessibilidade ficou fixado na tela, pode ser retirado depois */
+    height: 1500px; /* apenas pra testar se o botão da acessibilidade ficou fixado na tela, pode ser retirado depois */
 }
 
 .secao-descricao {
@@ -124,21 +124,54 @@ body {
 footer {
     color: var(--cor-texto);
     text-align: center;
-    padding-top: 35px;
-    height: 350px;
-    background-color: rgb(248, 249, 250) !important;
+    padding: 25px 0 50px 0px;
+    height: 100%;
+    background-color: var(--cor-retangulo);
+    background-image: radial-gradient(circle, #1a465053 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 1rem 1rem;
 }
 
 footer h1 {
     font-size: var(--titulo);
-    color: var(--cor-tituloPrincipal);
-    padding-bottom: 15px;
+    color: var(--cor-planoDeFundo);
+    padding: 25px 0px;
 }
 
 footer h2 {
     font-size: var(--subtitulo);
 }
 
-footer p {
+footer .info-contatos {
     font-size: var(--texto);
+    text-wrap: nowrap;
+}
+
+footer .bi {
+    color: var(--cor-subTitulo);
+}
+
+footer .bi-whatsapp{
+    color: var(--cor-planoDeFundo);
+}
+
+footer .info-contatos {
+    justify-content: center;
+}
+
+.btn {
+    border: #1a6f51 solid 2px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.copyright{
+    font-size: 12px;
+    height: 25px;
+    background-color: #225a67;
+}
+
+.copyright p {
+    margin: 0;
 }
