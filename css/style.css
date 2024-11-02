@@ -184,10 +184,12 @@ footer h2 {
 footer .info-contatos {
     font-size: var(--texto);
     text-wrap: nowrap;
+    color: var(--cor-planoDeFundo);
 }
 
 footer .bi {
-    color: var(--cor-subTitulo);
+    color: var(--cor-planoDeFundo);
+    width: 30px;
 }
 
 footer .bi-whatsapp{
@@ -195,7 +197,7 @@ footer .bi-whatsapp{
 }
 
 footer .info-contatos {
-    justify-content: center;
+    
 }
 
 .btn {
