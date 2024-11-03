@@ -22,8 +22,12 @@ h1 {
     font-size: var(--titulo);
 }
 
+.logo {
+    max-width: 80%;
+}
+
 .logo img {
-    max-width: 100%;
+    max-width: 90%;
     width: 55vh;
     align-items: center;
     text-align: center;
