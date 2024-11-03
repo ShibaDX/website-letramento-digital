@@ -93,11 +93,11 @@ h1 {
     cursor: pointer;
 }
 
-.botao-acessibilidade img {
+.botao-acessibilidade i {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: 60%;
+    font-size: 35px;
 }
 
 .container-body {
@@ -140,7 +140,7 @@ h1 {
 }
 
 .conheca-equipe {
-    max-width: 100%;
+
     background-color: var(--cor-planoDeFundo2);
 }
 
@@ -213,11 +213,12 @@ footer a {
 }
 
 .copyright{
-    font-size: 12px;
-    height: 25px;
+    font-size: 16px;
+    height: 36px;
     background-color: #225a67;
 }
 
 .copyright p {
     margin: 0;
+
 }
