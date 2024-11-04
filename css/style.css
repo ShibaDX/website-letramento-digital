@@ -234,7 +234,8 @@ footer a {
 
 /*Próximo Evento*/
 .cronograma{
-    margin: 10px;
+    margin: 10px 0;
+    max-width: 100%;
 }
 
 .cronograma a {
