@@ -8,8 +8,11 @@
     --cor-titulo2: rgb(13, 13, 192); 
 
     --titulo: 32px;
+    --titulo-aumentado: 38px;
     --subtitulo: 22px;
+    --subtitulo-aumentado: 28px;
     --texto: 16px;
+    --texto-aumentado: 22px;
 }
 
 body {
@@ -18,9 +21,9 @@ body {
     max-width: 100%;
 }
 
-h1 {
+/*h1 {
     font-size: var(--titulo);
-}
+}*/
 
 .logo {
     max-width: 80%;
@@ -63,20 +66,11 @@ h1 {
     font-size: var(--titulo);
 }
 
-.texto-1 {
-    text-align: center;
-    margin: 30px auto;
-    justify-content: center;
-    max-width: 70%;
+.titulo-aumentado {
+    font-size: var(--titulo-aumentado);
 }
 
-.texto-1 h2 {
-    font-weight: bold;
-}
 
-.texto-1 p {
-    font-size: var(--texto);
-}
 
 .botao-acessibilidade {
     display: flex;
@@ -115,6 +109,9 @@ h1 {
     right: 0px !important;
 
 }
+.collapse {
+    align-items: center;
+}
 
 .container-body {
    /* height: 1500px;  apenas pra testar se o botão da acessibilidade ficou fixado na tela, pode ser retirado depois */
@@ -133,7 +130,6 @@ h1 {
 }
 
 .secao-descricao p {
-    font-size: var(--texto);
     color: var(--cor-texto);
 }
 

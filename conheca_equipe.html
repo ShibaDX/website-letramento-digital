@@ -50,9 +50,9 @@
         <i class="fa-solid fa-universal-access" style="color: #ffffff;"></i>
       </div>
       <div class="collapse" id="collapseExample">
-        <div class="botao-acessibilidade botao-tamanho-letras">
-          <i class="fa-solid fa-text-height" style="color: #ffffff;"></i>
-        </div>
+        <div class="botao-acessibilidade botao-tamanho-letras" id="botaoAumentarFonte">
+            <i class="fa-solid fa-text-height" style="color: #ffffff;"></i>
+          </div>
         <div class="botao-acessibilidade botao-descricao-visual">
           <i class="fa-regular fa-eye" style="color: #ffffff;"></i>
         </div>
@@ -65,7 +65,7 @@
       </div>
 
         <div class="conheca-equipe">
-            <h1 class="pt-4">Conheça a Equipe</h1>
+            <h1 class="pt-4 fs-2">Conheça a Equipe</h1>
 
             <div class="container">
                 <div class="row ">
@@ -73,8 +73,8 @@
                         <div class="card" style="width: 18rem;">
                             <img src="https://placehold.co/200x200" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Nome (Função)</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                <h5 class="card-title fs-5">Nome (Função)</h5>
+                                <p class="card-text fs-6">Some quick example text to build on the card title and make up the
                                     bulk of the
                                     card's content.</p>
                             </div>
@@ -84,8 +84,8 @@
                         <div class="card" style="width: 18rem;">
                             <img src="https://placehold.co/200x200" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Nome (Função)</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                <h5 class="card-title fs-5">Nome (Função)</h5>
+                                <p class="card-text fs-6">Some quick example text to build on the card title and make up the
                                     bulk of the
                                     card's content.</p>
                             </div>
@@ -98,8 +98,8 @@
                         <div class="card" style="width: 18rem;">
                             <img src="https://placehold.co/200x200" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Nome (Função)</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                <h5 class="card-title fs-5">Nome (Função)</h5>
+                                <p class="card-text fs-6">Some quick example text to build on the card title and make up the
                                     bulk of the
                                     card's content.</p>
                             </div>
@@ -109,8 +109,8 @@
                         <div class="card" style="width: 18rem;">
                             <img src="https://placehold.co/200x200" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Nome (Função)</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                <h5 class="card-title fs-5">Nome (Função)</h5>
+                                <p class="card-text fs-6">Some quick example text to build on the card title and make up the
                                     bulk of the
                                     card's content.</p>
                             </div>
@@ -122,8 +122,8 @@
                     <div class="card" style="width: 22rem;">
                         <img src="img/foto-iara.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Prof. Drª Iara Carnevale de Almeida (Coordenadora do Projeto)</h5>
-                            <p class="card-text">Docente do Curso de Sistemas para Internet.</p>
+                            <h5 class="card-title fs-5">Prof. Drª Iara Carnevale de Almeida (Coordenadora do Projeto)</h5>
+                            <p class="card-text fs-6">Docente do Curso de Sistemas para Internet.</p>
                         </div>
                     </div>
                 </div>
@@ -197,6 +197,37 @@
         </div>
     </div>
 
+    <script>
+        botaoFonte = document.getElementById("botaoAumentarFonte");
+        botaoFonte.setAttribute('onclick', 'aumentarFonte()');
+        
+        function aumentarFonte() {
+            const textos = document.querySelectorAll('.fs-6, .fs-5, .fs-4, .fs-3, .fs-2, .fs-1, .card-text, .card-title');
+        
+            textos.forEach((element) => {
+                if (element.classList.contains('fs-6') && element.classList.contains('card-text')) {
+                    element.classList.remove('fs-6');
+                    element.classList.add('fs-5');
+                } else if (element.classList.contains('fs-5') && element.classList.contains('card-text')){
+                    element.classList.remove('fs-5');
+                    element.classList.add('fs-6');
+                } else if (element.classList.contains('fs-5') && element.classList.contains('card-title')){
+                    element.classList.remove('fs-5');
+                    element.classList.add('fs-4');
+                } else if (element.classList.contains('fs-4') && element.classList.contains('card-title')){
+                    element.classList.remove('fs-4');
+                    element.classList.add('fs-5');
+                } else if (element.classList.contains('fs-2')) {
+                    element.classList.remove('fs-2');
+                    element.classList.add('fs-1');
+                } else if (element.classList.contains('fs-1')) {
+                    element.classList.remove('fs-1');
+                    element.classList.add('fs-2');
+                }
+            });
+        
+        }
+        </script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
