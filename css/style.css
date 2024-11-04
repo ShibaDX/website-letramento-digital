@@ -80,15 +80,15 @@ h1 {
 
 .botao-acessibilidade {
     display: flex;
-    height: 40px;
-    width: 40px;
+    height: 55px;
+    width: 55px;
     background-color: #268ea6;
     margin-top: 50px;
     align-content: center;
     border-radius: 30%;
     position: fixed;
     right: 10px; /* define o botão no lado direito da tela */
-    top: 190px; /* define a distância do topo */
+    top: 100px; /* define a distância do topo */
     z-index: 2; /* traz o botão para frente de tudo */
     cursor: pointer;
 }
@@ -97,11 +97,7 @@ h1 {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    font-size: 30px;
-}
-
-.botao-tamanhoLetras {
-    top: 145px;
+    font-size: 35px;
 }
 
 .container-body {
@@ -225,4 +221,32 @@ footer a {
 .copyright p {
     margin: 0;
 
+}
+
+
+/*Próximo Evento*/
+.cronograma{
+    margin: 10px;
+}
+.tarja {
+    background-color: #268ea6;
+    
+}
+
+.encontroft{
+    margin: 15px 0;
+}
+
+.texto-encontro{
+    text-align: center;
+    align-items: center;
+
+}
+
+
+h3{
+    font-size: var(--subtitulo);
+    color: #e4e4e4; 
+    padding: 25px; 
+    
 }
