@@ -108,6 +108,14 @@ h1 {
     top: 210px;
 }
 
+#botao-libras {
+    display: flex !important;
+    position: fixed !important;
+    top: 330px !important;
+    right: 0px !important;
+
+}
+
 .container-body {
    /* height: 1500px;  apenas pra testar se o botão da acessibilidade ficou fixado na tela, pode ser retirado depois */
 }
