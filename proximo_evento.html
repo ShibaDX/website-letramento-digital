@@ -46,19 +46,32 @@
 
     <section class="container-body">
 
-        <div class="botao-acessibilidade">
-            <i class="fa-solid fa-universal-access" style="color: #ffffff;"></i>
+        <div class="botao-acessibilidade" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+        aria-expanded="false">
+        <i class="fa-solid fa-universal-access" style="color: #ffffff;"></i>
+      </div>
+      <div class="collapse" id="collapseExample">
+        <div class="botao-acessibilidade botao-tamanho-letras">
+          <i class="fa-solid fa-text-height" style="color: #ffffff;"></i>
         </div>
-
-        <div class="botao-acessibilidade botao-tamanhoLetras">
-            <i class="fa-solid fa-universal-access" style="color: #ffffff;"></i>
+        <div class="botao-acessibilidade botao-descricao-visual">
+          <i class="fa-regular fa-eye" style="color: #ffffff;"></i>
         </div>
+        <div vw class="enabled botao-libra">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper >
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+      </div>
 
         <div class="container">
             <div class="row">
                 <div class="col-md-4 cronograma">
                     <h1>Cronograma</h1>
-                    <p> Saiba quando serão nossos próximos encontro!</p>
+                    <p> Saiba quando serão nossos próximos encontros!</p>
+                    <p>Horário: 9:00 às 12:00</p>
+                    <p>Local: UniALFA <a href="https://maps.app.goo.gl/4HKptxBewq7wMAP66" target="_blank">(Ver no Google Maps)</a></p>
                 </div>
             </div>
         </div>
@@ -67,7 +80,7 @@
             <div class="row">
                 <div class="col-md-12 tarja">
                     <h3>Encontro 01: Apresentação do projeto e conhecer os participantes. Configuração dos
-                        celulares</h3>
+                        celulares (03/12/2024)</h3>
                 </div>
                 <div class="row texto-encontro">
                     <div class="col-md-8">
@@ -86,7 +99,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 tarja">
-                    <h3>Encontro 02: Rede Social WhatsApp e seus recursos</h3>
+                    <h3>Encontro 02: Rede Social WhatsApp e seus recursos (05/12/2024)</h3>
                 </div>
                 <div class="row texto-encontro">
                     <div class="col-md-8">
@@ -105,10 +118,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 tarja">
-                    <h3>Encontro 03: Cuidados no uso de site de compras online.</h3>
+                    <h3>Encontro 03: Cuidados no uso de site de compras online (10/12/2024)</h3>
                 </div>
                 <div class="row texto-encontro">
-                    <div class="col-md-8">
+                    <div class="col-md-8 ">
                         <p>Serão discutidos temas relacionados com tipos de compras online,
                             segurança cibernética, cuidados com golpes. Demonstração prática e
                             discussão sobre casos reais.</p>
@@ -123,11 +136,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 tarja">
-                    <h3>Encontro 04: Navegando pela web e jogos digitais.</h3>
+                    <h3>Encontro 04: Navegando pela web e jogos digitais (12/12/2024)</h3>
                 </div>
                 <div class="row texto-encontro">
                     <div class="col-md-8">
-                        <p></p>
+                        <p>Neste encontro, os participantes aprenderão a navegar com segurança pela internet, explorando sites úteis e recursos de busca. Além disso, serão apresentados a jogos digitais como forma de lazer e estímulo mental, ajudando-os a se familiarizar com o universo online de maneira prática e segura.</p>
                     </div>
                     <div class="col-md-4">
                         <img src="https://placehold.co/250x250" class="encontroft" alt="...">
@@ -201,12 +214,6 @@
         </div>
     </div>
 
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
-    </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');

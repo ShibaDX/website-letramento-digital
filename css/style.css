@@ -85,23 +85,27 @@ h1 {
     background-color: #268ea6;
     margin-top: 50px;
     align-content: center;
-    border-radius: 30%;
+    border-radius: 8px;
     position: fixed;
     right: 10px; /* define o botão no lado direito da tela */
-    top: 190px; /* define a distância do topo */
+    top: 110px; /* define a distância do topo */
     z-index: 2; /* traz o botão para frente de tudo */
     cursor: pointer;
 }
 
-.botao-acessibilidade i {
+.botao-acessibilidade i, .botao-tamanho-letras i, .botao-descricao-visual i {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 25px;
 }
 
-.botao-tamanhoLetras {
-    top: 145px;
+.botao-tamanho-letras {
+    top: 160px;
+}
+
+.botao-descricao-visual {
+    top: 210px;
 }
 
 .container-body {
@@ -150,7 +154,7 @@ h1 {
 
 .conheca-equipe h1 {
     text-align: center;
-    color: var(--cor-titulo2);
+    color: var(--cor-retangulo);
     font-weight: bold;
 }
 
@@ -232,8 +236,12 @@ footer a {
 .cronograma{
     margin: 10px;
 }
+
+.cronograma a {
+    text-decoration: none;
+}
 .tarja {
-    background-color: #268ea6;
+    background-color: var(--cor-retangulo);
     
 }
 
@@ -244,13 +252,13 @@ footer a {
 .texto-encontro{
     text-align: center;
     align-items: center;
-
+    margin: 20px 0;
 }
 
 
 h3{
     font-size: var(--subtitulo);
-    color: #e4e4e4; 
+    color: var(--cor-planoDeFundo2); 
     padding: 25px; 
     
 }

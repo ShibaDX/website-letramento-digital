@@ -45,12 +45,23 @@
 
   <section class="container-body">
 
-    <div class="botao-acessibilidade">
+    <div class="botao-acessibilidade" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+      aria-expanded="false">
       <i class="fa-solid fa-universal-access" style="color: #ffffff;"></i>
     </div>
-
-    <div class="botao-acessibilidade botao-tamanhoLetras">
-      <i class="fa-solid fa-universal-access" style="color: #ffffff;"></i>
+    <div class="collapse" id="collapseExample">
+      <div class="botao-acessibilidade botao-tamanho-letras">
+        <i class="fa-solid fa-text-height" style="color: #ffffff;"></i>
+      </div>
+      <div class="botao-acessibilidade botao-descricao-visual">
+        <i class="fa-regular fa-eye" style="color: #ffffff;"></i>
+      </div>
+      <div vw class="enabled botao-libra">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper >
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
     </div>
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -201,12 +212,6 @@
     </div>
   </div>
 
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');

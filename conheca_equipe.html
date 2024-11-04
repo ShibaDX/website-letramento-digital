@@ -45,13 +45,24 @@
 
     <section class="container-body">
 
-        <div class="botao-acessibilidade">
-            <i class="fa-solid fa-universal-access" style="color: #ffffff;"></i>
+        <div class="botao-acessibilidade" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+        aria-expanded="false">
+        <i class="fa-solid fa-universal-access" style="color: #ffffff;"></i>
+      </div>
+      <div class="collapse" id="collapseExample">
+        <div class="botao-acessibilidade botao-tamanho-letras">
+          <i class="fa-solid fa-text-height" style="color: #ffffff;"></i>
         </div>
-
-        <div class="botao-acessibilidade botao-tamanhoLetras">
-            <i class="fa-solid fa-universal-access" style="color: #ffffff;"></i>
+        <div class="botao-acessibilidade botao-descricao-visual">
+          <i class="fa-regular fa-eye" style="color: #ffffff;"></i>
         </div>
+        <div vw class="enabled botao-libra">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper >
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+      </div>
 
         <div class="conheca-equipe">
             <h1 class="pt-4">Conheça a Equipe</h1>
@@ -59,7 +70,7 @@
             <div class="container">
                 <div class="row ">
                     <div class="col-md-6 equipe-foto  mt-5">
-                        <div class="card" style="width: 22rem;">
+                        <div class="card" style="width: 18rem;">
                             <img src="https://placehold.co/200x200" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Nome (Função)</h5>
@@ -70,7 +81,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 equipe-foto mt-5">
-                        <div class="card" style="width: 22rem;">
+                        <div class="card" style="width: 18rem;">
                             <img src="https://placehold.co/200x200" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Nome (Função)</h5>
@@ -84,7 +95,7 @@
 
                 <div class="row">
                     <div class="col-md-6 equipe-foto mt-5">
-                        <div class="card" style="width: 22rem;">
+                        <div class="card" style="width: 18rem;">
                             <img src="https://placehold.co/200x200" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Nome (Função)</h5>
@@ -95,7 +106,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 equipe-foto mt-5">
-                        <div class="card" style="width: 22rem;">
+                        <div class="card" style="width: 18rem;">
                             <img src="https://placehold.co/200x200" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Nome (Função)</h5>
@@ -108,7 +119,7 @@
                 </div>
 
                 <div class="equipe-foto mt-5 pb-5">
-                    <div class="card" style="width: 26rem;">
+                    <div class="card" style="width: 22rem;">
                         <img src="img/foto-iara.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Prof. Drª Iara Carnevale de Almeida (Coordenadora do Projeto)</h5>
@@ -186,12 +197,6 @@
         </div>
     </div>
 
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
-    </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
