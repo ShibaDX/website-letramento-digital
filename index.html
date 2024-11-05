@@ -28,11 +28,13 @@
             <a class="nav-link active fs-6 f6-5" href="#"><i class="fa-solid fa-house"></i> <br>Home</a>
           </li>
           <li class="nav-item d-flex">
-            <a class="nav-link fs-6 f6-5" href="conheca_equipe.html"><i class="fa-solid fa-people-group"></i> <br>Conheça a
+            <a class="nav-link fs-6 f6-5" href="conheca_equipe.html"><i class="fa-solid fa-people-group"></i>
+              <br>Conheça a
               Equipe</a>
           </li>
           <li class="nav-item d-flex">
-            <a class="nav-link fs-6 f6-5" href="proximo_evento.html"><i class="fa-solid fa-calendar-days"></i> <br>Próximos
+            <a class="nav-link fs-6 f6-5" href="proximo_evento.html"><i class="fa-solid fa-calendar-days"></i>
+              <br>Próximos
               Eventos</a>
           </li>
           <li class="nav-item d-flex">
@@ -59,7 +61,7 @@
       </div>
       <div vw class="enabled" id="botao-libras">
         <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper >
+        <div vw-plugin-wrapper>
           <div class="vw-plugin-top-wrapper"></div>
         </div>
       </div>
@@ -92,7 +94,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <p class="fs-6 f6-5">Este projeto de extensão pretende capacitar os idosos com habilidades digitais essenciais para promover
+            <p class="fs-6 f6-5">Este projeto de extensão pretende capacitar os idosos com habilidades digitais
+              essenciais para promover
               uma participação mais ativa nesta era digital, fortalecendo a conexão entre gerações. <br>
               O projeto é desenvolvido pela prof Iara Carnevale de Almeida - docente no curso de Sistemas para Internet,
               UniALFA Umuarama / PR - apoiado pelos alunos deste curso.
@@ -117,7 +120,8 @@
           <div class="col-md-6">
             <div class="foto-descricao">
               <img class="rounded img-fluid" src="https://placehold.co/500x250" alt="">
-              <p class="mt-3 fs-6 f6-5">Momentos de aprendizado e inclusão digital, com a orientação de nossos tutores dedicados.
+              <p class="mt-3 fs-6 f6-5">Momentos de aprendizado e inclusão digital, com a orientação de nossos tutores
+                dedicados.
               </p>
             </div>
           </div>
@@ -149,6 +153,7 @@
 
   </section>
 
+  <div class="bar-2"></div>
   <footer>
     <div class="container">
       <div class="row d-flex justify-content-around">
@@ -214,28 +219,28 @@
     botaoFonte = document.getElementById("botaoAumentarFonte");
     botaoFonte.setAttribute('onclick', 'aumentarFonte()');
 
-function aumentarFonte() {
-    const textos = document.querySelectorAll('.fs-6, .fs-5, .fs-4, .fs-3, .fs-2, .f6-5, .f3-2, .f2-1, .f5-4');
-    
-    textos.forEach((element) => {
+    function aumentarFonte() {
+      const textos = document.querySelectorAll('.fs-6, .fs-5, .fs-4, .fs-3, .fs-2, .f6-5, .f3-2, .f2-1, .f5-4');
+
+      textos.forEach((element) => {
         if (element.classList.contains('fs-6') && element.classList.contains('f6-5')) {
-            element.classList.remove('fs-6');
-            element.classList.add('fs-5');
-        } else if (element.classList.contains('fs-5') && element.classList.contains('f6-5')){
-            element.classList.remove('fs-5');
-            element.classList.add('fs-6');
-        } else if (element.classList.contains('fs-3') && element.classList.contains('f3-2')){
-            element.classList.remove('fs-3');
-            element.classList.add('fs-2');
-        } else if (element.classList.contains('fs-2') && element.classList.contains('f3-2')){
-            element.classList.remove('fs-2');
-            element.classList.add('fs-3');
-        } else if (element.classList.contains('fs-2') && element.classList.contains('f2-1')){
-            element.classList.remove('fs-2');
-            element.classList.add('fs-1');
-        } else if (element.classList.contains('fs-1') && element.classList.contains('f2-1')){
-            element.classList.remove('fs-1');
-            element.classList.add('fs-2');
+          element.classList.remove('fs-6');
+          element.classList.add('fs-5');
+        } else if (element.classList.contains('fs-5') && element.classList.contains('f6-5')) {
+          element.classList.remove('fs-5');
+          element.classList.add('fs-6');
+        } else if (element.classList.contains('fs-3') && element.classList.contains('f3-2')) {
+          element.classList.remove('fs-3');
+          element.classList.add('fs-2');
+        } else if (element.classList.contains('fs-2') && element.classList.contains('f3-2')) {
+          element.classList.remove('fs-2');
+          element.classList.add('fs-3');
+        } else if (element.classList.contains('fs-2') && element.classList.contains('f2-1')) {
+          element.classList.remove('fs-2');
+          element.classList.add('fs-1');
+        } else if (element.classList.contains('fs-1') && element.classList.contains('f2-1')) {
+          element.classList.remove('fs-1');
+          element.classList.add('fs-2');
         } else if (element.classList.contains('fs-5') && element.classList.contains('f5-4')) {
           element.classList.remove('fs-5');
           element.classList.add('fs-4');
@@ -243,9 +248,9 @@ function aumentarFonte() {
           element.classList.remove('fs-4');
           element.classList.add('fs-5');
         }
-    });
+      });
 
-}
+    }
   </script>
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <script>
