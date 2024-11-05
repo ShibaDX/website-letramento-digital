@@ -62,16 +62,6 @@ body {
     height: 7px;
 }
 
-.titulo {
-    font-size: var(--titulo);
-}
-
-.titulo-aumentado {
-    font-size: var(--titulo-aumentado);
-}
-
-
-
 .botao-acessibilidade {
     display: flex;
     height: 40px;
@@ -113,10 +103,6 @@ body {
     align-items: center;
 }
 
-.container-body {
-   /* height: 1500px;  apenas pra testar se o botão da acessibilidade ficou fixado na tela, pode ser retirado depois */
-}
-
 .secao-descricao {
     margin-top: 30px;
     overflow: hidden;
@@ -147,12 +133,7 @@ body {
     align-items: center;
 }
 
-.foto-descricao img {
-    
-}
-
 .conheca-equipe {
-
     background-color: var(--cor-planoDeFundo2);
 }
 
@@ -165,7 +146,6 @@ body {
 .equipe-foto .card{
     align-items: center;
     margin: 0 auto;
-
 }
 
 .card {
@@ -212,10 +192,6 @@ footer .bi-whatsapp{
     color: var(--cor-planoDeFundo);
 }
 
-footer .info-contatos {
-    
-}
-
 .btn {
     border: #1a6f51 solid 2px;
 }
@@ -232,7 +208,6 @@ footer a {
 
 .copyright p {
     margin: 0;
-
 }
 
 
@@ -244,6 +219,10 @@ footer a {
 
 .cronograma a {
     text-decoration: none;
+}
+
+.cronograma h1 {
+    font-weight: bold;
 }
 .tarja {
     background-color: var(--cor-retangulo);
@@ -265,5 +244,8 @@ h3{
     font-size: var(--subtitulo);
     color: var(--cor-planoDeFundo2); 
     padding: 25px; 
-    
+}
+
+.table {
+    max-width: 100%; 
 }
