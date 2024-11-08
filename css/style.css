@@ -21,9 +21,6 @@ body {
     max-width: 100%;
 }
 
-/*h1 {
-    font-size: var(--titulo);
-}*/
 
 .logo {
     max-width: 80%;
@@ -83,7 +80,7 @@ body {
     cursor: pointer;
 }
 
-.botao-acessibilidade i, .botao-tamanho-letras i, .botao-descricao-visual i {
+.botao-acessibilidade i, .botao-tamanho-letras i {
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -94,14 +91,10 @@ body {
     top: 160px;
 }
 
-.botao-descricao-visual {
-    top: 210px;
-}
-
 #botao-libras {
     display: flex !important;
     position: fixed !important;
-    top: 330px !important;
+    top: 280px !important;
     right: 0px !important;
 
 }
