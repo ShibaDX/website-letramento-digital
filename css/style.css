@@ -156,6 +156,10 @@ body {
     font-weight: bold;
 }
 
+.card img {
+    height: 300px;
+}
+
 footer {
     color: var(--cor-texto);
     text-align: center;
@@ -329,5 +333,5 @@ h3{
   }
   
   .carousel-item img {
-    max-height: 600px;
+    max-height: 90vh;
   }
